@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 
 # coding: utf-8
 
@@ -6,15 +5,14 @@
 
 for line in open("file.txt"):
  if "perro" in line:
-   print(line)
-   
+   print line
 
 
 # In[1]:
 
 f = open('file.txt')
 for line in iter(f):
-    print(line)
+    print line
 f.close()
 
 
@@ -22,7 +20,7 @@ f.close()
 
 from collections import Counter
 
-data = '''ashwin programmer india mexico mexico mexico
+data = '''ashwin programmer india
 amith programmer india'''
 
 c = Counter()
@@ -42,7 +40,7 @@ for line in open ('TEST.txt', 'r'):
   for word in line.split ():
     cnt [word] += 1
 
-print(cnt)
+print cnt
 
 
 
@@ -86,12 +84,11 @@ for word in f:
 
 with open('TEST.txt','r') as f:
     for line in f:
-        for word in line.split(' ',3):
+        for word in line.split():
            print(word)    
 
 
 # In[28]:
-
 
 f = open("TEST.txt","r") #opens file with name of "test.txt"
 #print(f.read(1))

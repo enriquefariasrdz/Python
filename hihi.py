@@ -1,0 +1,4 @@
+# %%
+msg = "HiHi"
+print(msg)
+# %%
